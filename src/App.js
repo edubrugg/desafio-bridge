@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import NavBar from './components/navBar';
+import FormInput from './components/formInput';
+import TextArea from './components/textArea';
 
-export default App;
+import "./components/form.css"
+import "rbx/index.css";
+
+ const App = () => {
+   const [data, setData] = useState();
+
+   return (
+     <>
+     <div className="container">
+      <NavBar />
+     </div>
+     <div className="container">
+       <TextArea />
+     </div>
+     <div className="container">
+      <FormInput className="form-input"/>
+     </div>
+     </>
+   );
+ };
+  
+ export default App;

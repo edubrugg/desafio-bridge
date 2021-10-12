@@ -35,5 +35,3 @@ Para rodar o fronted da aplicação será necessário acessar baixar os arquivos
 Após baixar todas as dependências da aplicação, você deve rodar, no terminal, o comando `npm start`
 
 Para rodar o algoritmo que calcula o número duodigito, você deve navegar até a pasta backend e executar, no terminal, o comando `python3 duodigito.py`
-
-
